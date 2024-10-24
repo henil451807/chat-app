@@ -27,7 +27,9 @@ function App() {
     setError("");
     try {
       // const res = await axios.post("http://127.0.0.1:5000/query", { question });
-      const res = await axios.post("https://medibot1.onrender.com/query", { question });
+      // https://medibot1.vercel.app/
+      // const res = await axios.post("https://medibot1.onrender.com/query", { question });
+      const res = await axios.post("https://medi-bot-matj.onrender.com//query", { question });
       const newResponse = { question, response: res.data.response };
       setResponseHistory([newResponse, ...responseHistory]);
       setLatestResponse(newResponse);
